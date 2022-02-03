@@ -1,7 +1,5 @@
 call plug#begin()
 
-" OneDark theme
-Plug 'joshdick/onedark.vim'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 
@@ -152,6 +150,14 @@ nnoremap <A-l> <C-w>l
 " Bring search results to middle of screen
 nnoremap n nzz
 nnoremap N Nzz
+
+" Move to beginning/end of line using home row
+nnoremap H 0
+nnoremap L $
+
+" Faster file writing and exiting
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
 
 
 let g:gruvbox_contrast_dark = 'hard'
