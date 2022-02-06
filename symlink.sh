@@ -7,10 +7,15 @@ rm -i "$HOME/.zshrc"
 ln -s "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 
 # Symlink init.vim
-# Check if $HOME/.config.nvim exists
+# Check if $HOME/.config/nvim exists
 if [ -d "$HOME/.config/nvim" ]; then
-    rm -i "$HOME/.config/nvim/init.vim"
-else
-    mkdir "$HOME/.config/nvim"
+    rm -df "$HOME/.config/nvim"
 fi
-ln -s "$HOME/.dotfiles/init.vim" "$HOME/.config/nvim/init.vim"
+ln -s "$HOME/.dotfiles/nvim" "$HOME/.config/nvim"
+
+# Symlink i3
+# Check if $HOME/.config/i3 exists
+if [ -d "$HOME/.config/i3" ]; then
+    rm -df "$HOME/.config/i3"
+fi
+ln -s "$HOME/.dotfiles/i3" "$HOME/.config/i3"
