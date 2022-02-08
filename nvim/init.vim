@@ -155,6 +155,10 @@ nnoremap N Nzz
 nnoremap H 0
 nnoremap L $
 
+" Use <C-j/k> to page down/up
+nnoremap <C-j> <C-f>
+nnoremap <C-k> <C-b>
+
 " Faster file writing and exiting
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
