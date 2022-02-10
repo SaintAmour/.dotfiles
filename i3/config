@@ -198,3 +198,6 @@ smart_borders no_gaps
 smart_gaps on
 gaps inner 10
 gaps outer 10
+
+# Set wallpaper with feh
+exec_always --no-startup-id feh --bg-scale $HOME/.config/i3/background.jpg
