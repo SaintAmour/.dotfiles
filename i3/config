@@ -196,8 +196,8 @@ for_window [class="^.*"] border pixel 1
 # Basic config for i3-gaps
 smart_borders no_gaps
 smart_gaps on
-gaps inner 10
-gaps outer 10
+gaps inner 5
+gaps outer 5
 
 # Set wallpaper with feh
 exec_always --no-startup-id feh --bg-scale $HOME/.config/i3/background.jpg
