@@ -124,9 +124,8 @@ inoremap jk <Esc>
 
 " Copy to clipboard
 vnoremap <leader>y "+y
-nnoremap <leader>y "+y
 " Paste from clipboard
-vnoremap <leader>p "_dP
+nnoremap <leader>p "+p
 
 " FZF mappings
 nnoremap <leader>f :Files<CR>
@@ -164,9 +163,10 @@ nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 
 
-let g:gruvbox_contrast_dark = 'hard'
-
-colorscheme gruvbox
 if (has("termguicolors"))
     set termguicolors
 endif
+
+set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
