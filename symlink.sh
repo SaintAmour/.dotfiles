@@ -20,9 +20,9 @@ if [ -d "$HOME/.config/i3" ]; then
 fi
 ln -s "$HOME/dotfiles/i3" "$HOME/.config/i3"
 
-# Symlink polybar
-# Check if $HOME/.config/polybar exists
-if [ -d "$HOME/.config/polybar" ]; then
-    rm -drf "$HOME/.config/polybar"
+# Symlink i3status
+# Check if $HOME/.config/i3status exists
+if [ -d "$HOME/.config/i3status" ]; then
+    rm -drf "$HOME/.config/i3status"
 fi
-ln -s "$HOME/dotfiles/polybar" "$HOME/.config/polybar"
+ln -s "$HOME/dotfiles/i3status" "$HOME/.config/i3status"
