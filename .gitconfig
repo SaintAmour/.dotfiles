@@ -2,4 +2,4 @@
 	email = 61098210+SaintAmour@users.noreply.github.com
 	name = Brandon St. Amour
 [credential]
-	helper = cache
+	helper = store
