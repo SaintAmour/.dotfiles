@@ -6,6 +6,10 @@ ln -s "$HOME/dotfiles/.gitconfig" "$HOME/.gitconfig"
 rm -i "$HOME/.zshrc"
 ln -s "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 
+# Symlink .nvidia-settings-rc
+rm -i "$HOME/.nvidia-settings-rc"
+ln -s "$HOME/dotfiles/.nvidia-settings-rc" "$HOME/.nvidia-settings-rc"
+
 # Symlink init.vim
 # Check if $HOME/.config/nvim exists
 if [ -d "$HOME/.config/nvim" ]; then
