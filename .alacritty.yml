@@ -1,21 +1,22 @@
 # Font configuration
 font:
-  family: monospace
-  style: Regular
+  normal:
+    family: SourceCode Pro
+    style: Regular
 
   bold:
-    family: monospace
+    family: SourceCode Pro
     style: Bold
 
   italic:
-    family: monospace
+    family: SourceCode Pro
     style: Italic
 
   bold_italic:
-      family: monospace
+      family: SourceCode Pro
       style: Bold Italic
 
-  size: 11
+  size: 10
 
 # Colors (Gruvbox dark)
 colors:
