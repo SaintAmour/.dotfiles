@@ -53,6 +53,8 @@ bindsym $mod+d exec dmenu_run
 # installed.
 bindsym Super_L exec --no-startup-id i3-dmenu-desktop
 
+bindsym $mod+shift+x exec betterlockscreen -l blur
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
