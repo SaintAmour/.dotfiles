@@ -10,6 +10,10 @@ ln -s "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 rm -i "$HOME/.nvidia-settings-rc"
 ln -s "$HOME/dotfiles/.nvidia-settings-rc" "$HOME/.nvidia-settings-rc"
 
+# Symlink .alacritty.yml
+rm -i "$HOME/.alacritty.yml"
+ln -s "$HOME/dotfiles/.alacritty.yml" "$HOME/.alacritty.yml"
+
 # Symlink init.vim
 # Check if $HOME/.config/nvim exists
 if [ -d "$HOME/.config/nvim" ]; then
