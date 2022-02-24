@@ -101,3 +101,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+####################################
+########## Custom aliases ##########
+####################################
+
+# File listings
+alias ls="ls --color=always --group-directories-first"
+alias ll="ls -al --color=always --group-directories-first"
+
+# Pacman and Yay
+alias pacsyu="sudo pacman -Syu"
+alias pacsyyu="sudo pacman -Syyu"
+alias yaysua="yay -Sua --noconfirm"
+alias yaysyu="yay -Sya --noconfirm"
+alias pacclean="sudo pacman -R $(pacman -Qtdq)"
