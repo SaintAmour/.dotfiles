@@ -14,6 +14,10 @@ ln -s "$HOME/dotfiles/.nvidia-settings-rc" "$HOME/.nvidia-settings-rc"
 rm -i "$HOME/.alacritty.yml"
 ln -s "$HOME/dotfiles/.alacritty.yml" "$HOME/.alacritty.yml"
 
+# Symlink .tmux.conf
+rm -i "$HOME/.tmux.conf"
+ln -s "$HOME/dotfiles/.tmux.conf" "$HOME/.tmux.conf"
+
 # Symlink init.vim
 # Check if $HOME/.config/nvim exists
 if [ -d "$HOME/.config/nvim" ]; then
