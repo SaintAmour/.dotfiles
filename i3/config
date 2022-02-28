@@ -194,7 +194,6 @@ for_window [class="^.*"] border pixel 1
 
 # Basic config for i3-gaps
 smart_borders no_gaps
-smart_gaps on
 gaps inner 10
 gaps outer 0
 
