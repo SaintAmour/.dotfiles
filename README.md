@@ -6,7 +6,7 @@ My personal dotfiles.
 
 - i3-gaps - Window manager
     - dmenu - Application launcher
-    - i3status - Status bar
+    - polybar - Status bar
     - feh - Set background
     - playerctl - Media player controller
     - betterlockscreen - Lock screen
