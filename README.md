@@ -4,12 +4,15 @@ My personal dotfiles.
 
 ## Software
 
-Config files for the following:
 - i3-gaps - Window manager
-- i3status - Status bar for i3
-- feh - Set background with i3
+    - dmenu - Application launcher
+    - i3status - Status bar
+    - feh - Set background
+    - playerctl - Media player controller
+    - betterlockscreen - Lock screen
 - alacritty - Terminal emulator
 - zsh - Shell
+    - oh-my-zsh - Zsh framework
 - vim/neovim - Text editor
 - tmux - Terminal multiplexer
 - nvidia - NVIDIA display settings
