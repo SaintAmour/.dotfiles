@@ -11,6 +11,7 @@ My personal dotfiles.
     - feh - Set background
     - playerctl - Media player controller
     - betterlockscreen - Lock screen
+    - xautolock - Timer to lock after inactivity
 - alacritty - Terminal emulator
 - zsh - Shell
     - oh-my-zsh - Zsh framework
