@@ -45,3 +45,10 @@ if [ -d "$HOME/.config/polybar" ]; then
     rm -drf "$HOME/.config/polybar"
 fi
 ln -s "$HOME/dotfiles/polybar" "$HOME/.config/polybar"
+
+# Symlink picom
+# Check if $HOME/.config/picom exists
+if [ -d "$HOME/.config/picom" ]; then
+    rm -drf "$HOME/.config/picom"
+fi
+ln -s "$HOME/dotfiles/picom" "$HOME/.config/picom"
