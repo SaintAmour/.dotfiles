@@ -6,12 +6,13 @@ My personal dotfiles.
 
 - i3-gaps - Window manager
     - dmenu - Application launcher
-    - polybar - Status bar
-        - dbus-python - Used to display spotify info in module
     - feh - Set background
     - playerctl - Media player controller
     - betterlockscreen - Lock screen
     - xautolock - Timer to lock after inactivity
+- polybar - Status bar
+    - dbus-python - Used to display spotify info in module
+- picom - Compositor
 - alacritty - Terminal emulator
 - zsh - Shell
     - oh-my-zsh - Zsh framework
