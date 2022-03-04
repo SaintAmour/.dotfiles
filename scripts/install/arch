@@ -2,7 +2,7 @@
 
 # dotfiles related packages
 ########################################
-sudo pacman -S i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux python curl git base-devel gnu-free-fonts
+sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux python curl git base-devel gnu-free-fonts
 
 # install yay
 mkdir $HOME/aur
@@ -13,6 +13,9 @@ cd -
 
 yay -S polybar betterlockscreen dbus-python
 
+# create .xinitrc file
+echo '#!/bin/bash\nexec i3' > $HOME/.xinitrc
+
 $HOME/dotfiles/scripts/setup
 $HOME/dotfiles/scripts/symlink
 
@@ -21,3 +24,8 @@ $HOME/dotfiles/scripts/symlink
 ########################################
 sudo pacman -S pulseaudio discord firefox
 yay -S spotify
+
+
+# start
+########################################
+startx
