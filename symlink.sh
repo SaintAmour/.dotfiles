@@ -10,10 +10,6 @@ ln -s "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 rm -i "$HOME/.nvidia-settings-rc"
 ln -s "$HOME/dotfiles/.nvidia-settings-rc" "$HOME/.nvidia-settings-rc"
 
-# Symlink .alacritty.yml
-rm -i "$HOME/.alacritty.yml"
-ln -s "$HOME/dotfiles/.alacritty.yml" "$HOME/.alacritty.yml"
-
 # Symlink .tmux.conf
 rm -i "$HOME/.tmux.conf"
 ln -s "$HOME/dotfiles/.tmux.conf" "$HOME/.tmux.conf"
@@ -38,6 +34,13 @@ if [ -d "$HOME/.config/i3status" ]; then
     rm -drf "$HOME/.config/i3status"
 fi
 ln -s "$HOME/dotfiles/i3status" "$HOME/.config/i3status"
+
+# Symlink alacritty
+# Check if $HOME/.config/alacritty exists
+if [ -d "$HOME/.config/alacritty" ]; then
+    rm -drf "$HOME/.config/alacritty"
+fi
+ln -s "$HOME/dotfiles/alacritty" "$HOME/.config/alacritty"
 
 # Symlink polybar
 # Check if $HOME/.config/polybar exists
