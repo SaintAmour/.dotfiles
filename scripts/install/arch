@@ -6,11 +6,29 @@
 # Install git as an additional package when prompted to quickly clone this repo.
 # If using archinstall, select Minimal option when prompted.
 # After initial install, reboot and login into user.  Then clone this repo to $HOME/dotfiles and then run $HOME/dotfiles/scripts/install/arch.
+
+# Software
+#   i3-gaps                 Window manager
+#       dmenu                   Application launcher
+#       feh                     Image viewer to set background
+#       playerctl               Media player controller
+#       betterlockscreen        Lock screen
+#       xautolock               Timer to lock after inactivity
+#   polybar                 Status bar
+#       dbus-python             Display spotify info module
+#   picom                   Compositor
+#   alacritty               Terminal emulator
+#   zsh                     Shell
+#       oh-my-zsh               Zsh framework
+#   neovim                  Text editor
+#   tmux                    Terminal multiplexer
+#   nvidia                  Graphics driver
+#   git                     personal config
 ########################################
 
 # dotfiles related packages
 ########################################
-sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux python curl git base-devel gnu-free-fonts
+sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux nvidia git base-devel curl gnu-free-fonts
 
 # install yay
 mkdir $HOME/aur
