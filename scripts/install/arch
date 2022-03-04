@@ -6,8 +6,8 @@ sudo pacman -S i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim 
 
 # install yay
 mkdir $HOME/aur
-git clone https://aur.archlinux.org/yay.git $HOME/aur/yay
-cd $HOME/aur/yay
+git clone https://aur.archlinux.org/yay.git $HOME/yay
+cd $HOME/yay
 makepkg -si
 cd -
 
