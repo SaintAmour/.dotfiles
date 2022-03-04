@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# This script is designed to install and setup all software on Arch Linux.
+########################################
+# NOTES
+# Install git as an additional package when prompted to quickly clone this repo.
+# If using archinstall, select Minimal option when prompted.
+# After initial install, reboot and login into user.  Then clone this repo to $HOME/dotfiles and then run $HOME/dotfiles/scripts/install/arch.
+########################################
+
 # dotfiles related packages
 ########################################
 sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux python curl git base-devel gnu-free-fonts
