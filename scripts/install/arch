@@ -19,5 +19,5 @@ $HOME/dotfiles/scripts/symlink
 
 # personal packages
 ########################################
-sudo pacman -S pulseaudio discord
+sudo pacman -S pulseaudio discord firefox
 yay -S spotify
