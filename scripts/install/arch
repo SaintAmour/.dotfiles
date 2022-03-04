@@ -1,0 +1,21 @@
+#!/bin/bash
+
+pacman -Sy i3-gaps dmenu feh playerctl xautolock
+pacman -Sy dbus-python
+pacman -Sy picom
+pacman -Sy alacritty
+pacman -Sy zsh
+pacman -Sy neovim
+pacman -Sy tmux
+
+pacman -Sy yay
+yay -S betterlockscreen
+yay -S polybar
+
+
+# change default shell to zsh
+chsh -S /bin/zsh
+
+# install oh-my-zsh
+pacman -Sy curl
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
