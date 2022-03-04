@@ -1,6 +1,14 @@
 #!/bin/bash
 
-pacman -S i3-gaps dmenu feh playerctl xautolock dbus-python picom alacritty zsh neovim tmux curl yay
+pacman -S i3-gaps dmenu feh playerctl xautolock dbus-python picom alacritty zsh neovim tmux curl git base-devel
+
+# install yay
+mkdir $HOME/aur
+git clone https://aur.archlinux.org/yay.git $HOME/aur/yay
+cd $HOME/aur/yay
+makepkg -si
+cd -
+
 yay -S polybar betterlockscreen
 
 # change default shell to zsh
