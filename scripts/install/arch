@@ -9,7 +9,7 @@ cd $HOME/aur/yay
 makepkg -si
 cd -
 
-sudo yay -S polybar betterlockscreen
+yay -S polybar betterlockscreen
 
 # change default shell to zsh
 chsh -S /bin/zsh
