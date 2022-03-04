@@ -11,5 +11,5 @@ cd -
 
 yay -S polybar betterlockscreen dbus-python
 
-../setup
-../symlink
+$HOME/dotfiles/scripts/setup
+$HOME/dotfiles/scripts/symlink
