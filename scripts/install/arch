@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux python curl git base-devel
+sudo pacman -S i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux python curl git base-devel gnu-free-fonts
 
 # install yay
 mkdir $HOME/aur
