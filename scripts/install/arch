@@ -21,9 +21,6 @@ cd -
 
 yay -S polybar betterlockscreen dbus-python
 
-# create .xinitrc file
-echo '#!/bin/bash\nexec i3' > $HOME/.xinitrc
-
 $HOME/dotfiles/scripts/setup
 $HOME/dotfiles/scripts/symlink
 
@@ -36,4 +33,7 @@ yay -S spotify
 
 # start
 ########################################
+# create .xinitrc file
+echo -e '#!/bin/bash\nexec i3' > $HOME/.xinitrc
+
 startx
