@@ -63,6 +63,9 @@ yay -S spotify
 
 # start
 ########################################
+# load nvidia settings
+nvidia-settings --load-config-only
+
 ln -s $HOME/dotfiles/.xinitrc $HOME/.xinitrc
 
 startx
@@ -70,8 +73,5 @@ startx
 
 # steps to do manually
 ########################################
-# load nvidia settings
-#nvidia-settings --load-config-only
-
 # apply flat mouse acceleration profile
 #https://wiki.archlinux.org/title/Mouse_acceleration#Disabling_mouse_acceleration
