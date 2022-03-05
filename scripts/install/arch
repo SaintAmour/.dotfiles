@@ -51,7 +51,6 @@ yay -S spotify
 
 # start
 ########################################
-# create .xinitrc file
-echo -e '#!/bin/bash\nexec i3' > $HOME/.xinitrc
+ln -s $HOME/dotfiles/.xinitrc $HOME/
 
 startx
