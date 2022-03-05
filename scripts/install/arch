@@ -20,15 +20,27 @@
 #   alacritty               Terminal emulator
 #   zsh                     Shell
 #       oh-my-zsh               Zsh framework
+#           gnu-free-fonts          Font for various symbols
 #   neovim                  Text editor
 #   tmux                    Terminal multiplexer
 #   nvidia                  Graphics driver
-#   git                     personal config
+#       nvidia-settings         Tool to configure NVIDIA settings
+#   git                     Personal config
+#   yay                     Pacman wrapper and AUR helper
+#       base-devel              Pacakage group for installing AURs
+#   curl                    Transfer data
+
+# Personal
+#   pulseaudio              Sound server
+#   firefox                 Web browser
+#   spotify                 Music player
+#   discord                 Voice and text chat app
+
 ########################################
 
 # dotfiles related packages
 ########################################
-sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux nvidia git base-devel curl gnu-free-fonts
+sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux nvidia nvidia-settings git base-devel curl gnu-free-fonts
 
 # install yay
 mkdir $HOME/aur
@@ -51,6 +63,9 @@ yay -S spotify
 
 # start
 ########################################
+# load nvidia settings
+nvidia-settings --load-config-only
+
 ln -s $HOME/dotfiles/.xinitrc $HOME/
 
 startx
