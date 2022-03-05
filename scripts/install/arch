@@ -62,12 +62,8 @@ yay -S spotify
 
 
 # start
-# add 'exec i3' to .xinitrc
-cp /etc/X11/xinit/xinitrc $HOME/.xinitrc
-echo -e "\nexec i3" >> $HOME/.xinitrc
-
-# apply flat mouse acceleration with xrandr
-sudo cp $HOME/dotfiles/scripts/install/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
+########################################
+ln -s $HOME/dotfiles/.xinitrc $HOME/.xinitrc
 
 startx
 
@@ -76,3 +72,5 @@ startx
 ########################################
 # load nvidia settings
 #nvidia-settings --load-config-only
+
+# apply flat mouse acceleration profile
