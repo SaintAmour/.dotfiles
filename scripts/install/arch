@@ -66,6 +66,7 @@ yay -S spotify
 # load nvidia settings
 nvidia-settings --load-config-only
 
-ln -s $HOME/dotfiles/.xinitrc $HOME/
+cp /etc/X11/xinit/xinitrc $HOME/.xinitrc
+echo -e "\n\nexec i3" $HOME/.xinitrc
 
 startx
