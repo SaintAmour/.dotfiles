@@ -3,9 +3,8 @@
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# oh-my-zsh replaces existing .zshrc so symlink again
-rm $HOME/.zshrc
-ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
+# oh-my-zsh replaces existing .zshrc so move it back
+mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
 
 # change default shell to zsh
 chsh -s /bin/zsh
