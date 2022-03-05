@@ -74,3 +74,4 @@ startx
 #nvidia-settings --load-config-only
 
 # apply flat mouse acceleration profile
+#https://wiki.archlinux.org/title/Mouse_acceleration#Disabling_mouse_acceleration
