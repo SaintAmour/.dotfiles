@@ -59,3 +59,10 @@ if [ -d "$HOME/.config/picom" ]; then
     rm -drf "$HOME/.config/picom"
 fi
 ln -s "$HOME/dotfiles/picom" "$HOME/.config/picom"
+
+# Symlink rofi
+# Check if $HOME/.config/rofi exists
+if [ -d "$HOME/.config/rofi" ]; then
+    rm -drf "$HOME/.config/rofi"
+fi
+ln -s "$HOME/dotfiles/rofi" "$HOME/.config/rofi"

@@ -9,7 +9,7 @@
 
 # Software
 #   i3-gaps                 Window manager
-#       dmenu                   Application launcher
+#       rofi                    Application launcher
 #       feh                     Image viewer to set background
 #       playerctl               Media player controller
 #       betterlockscreen        Lock screen
@@ -40,7 +40,7 @@
 
 # dotfiles related packages
 ########################################
-sudo pacman -S xorg xorg-server xorg-xinit i3-gaps dmenu feh playerctl xautolock picom alacritty zsh neovim tmux nvidia nvidia-settings git base-devel curl gnu-free-fonts
+sudo pacman -S xorg xorg-server xorg-xinit i3-gaps rofi feh playerctl xautolock picom alacritty zsh neovim tmux nvidia nvidia-settings git base-devel curl gnu-free-fonts
 
 # install yay
 mkdir $HOME/aur
