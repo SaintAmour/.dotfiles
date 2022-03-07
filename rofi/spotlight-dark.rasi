@@ -9,7 +9,7 @@
 
     bg0:    #242424E6;
     bg1:    #7E7E7E80;
-    bg2:    #0860f2E6;
+    bg2:    #D79921E6;
 
     fg0:    #DEDEDE;
     fg1:    #FFFFFF;
@@ -87,7 +87,7 @@ element normal active {
 
 element selected normal, element selected active {
     background-color:   @bg2;
-    text-color:         @fg1;
+    text-color:         #000000;
 }
 
 element-icon {
