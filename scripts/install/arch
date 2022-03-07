@@ -60,6 +60,8 @@ $HOME/dotfiles/scripts/setup
 sudo pacman -S --noconfirm pulseaudio discord firefox gimp btop
 yay -S --noconfirm spotify
 
+# udpate any packages
+yaysyu
 
 # start
 ########################################
