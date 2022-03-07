@@ -57,7 +57,7 @@ $HOME/dotfiles/scripts/setup
 
 # personal packages
 ########################################
-sudo pacman -S pulseaudio discord firefox
+sudo pacman -S pulseaudio discord firefox gimp btop
 yay -S spotify
 
 
