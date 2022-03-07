@@ -40,7 +40,15 @@
 
 # dotfiles related packages
 ########################################
-sudo pacman -S --noconfirm xorg xorg-server xorg-xinit i3-gaps rofi feh playerctl xautolock picom alacritty zsh neovim tmux nvidia nvidia-settings git base-devel curl gnu-free-fonts
+sudo pacman -S --noconfirm xorg xorg-server xorg-xinit
+sudo pacman -S --noconfirm i3-gaps rofi feh playerctl xautolock
+sudo pacman -S --noconfirm picom
+sudo pacman -S --noconfirm alacritty
+sudo pacman -S --noconfirm zsh gnu-free-fonts
+sudo pacman -S --noconfirm neovim
+sudo pacman -S --noconfirm tmux
+sudo pacman -S --noconfirm nvidia nvidia-settings
+sudo pacman -S --noconfirm git base-devel curl
 
 # install yay
 mkdir $HOME/aur
@@ -49,7 +57,9 @@ cd $HOME/yay
 makepkg -si --noconfirm
 cd -
 
-yay -S --noconfirm polybar betterlockscreen dbus-python
+yay -S --noconfirm polybar
+yay -S --noconfirm betterlockscreen
+yay -S --noconfirm dbus-python
 
 $HOME/dotfiles/scripts/symlink
 $HOME/dotfiles/scripts/setup
@@ -57,7 +67,11 @@ $HOME/dotfiles/scripts/setup
 
 # personal packages
 ########################################
-sudo pacman -S --noconfirm pulseaudio discord firefox gimp btop
+sudo pacman -S --noconfirm pulseaudio
+sudo pacman -S --noconfirm discord
+sudo pacman -S --noconfirm firefox
+sudo pacman -S --noconfirm gimp
+sudo pacman -S --noconfirm btop
 yay -S --noconfirm spotify
 
 # udpate any packages
