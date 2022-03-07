@@ -46,7 +46,7 @@ sudo pacman -S --noconfirm xorg xorg-server xorg-xinit i3-gaps rofi feh playerct
 mkdir $HOME/aur
 git clone https://aur.archlinux.org/yay.git $HOME/yay
 cd $HOME/yay
-makepkg -si
+makepkg -si --noconfirm
 cd -
 
 yay -S --noconfirm polybar betterlockscreen dbus-python
@@ -61,7 +61,7 @@ sudo pacman -S --noconfirm pulseaudio discord firefox gimp btop
 yay -S --noconfirm spotify
 
 # udpate any packages
-yaysyu
+yay
 
 # start
 ########################################
