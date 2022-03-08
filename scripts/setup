@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# oh-my-zsh replaces existing .zshrc so move it back
-mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 
 # change default shell to zsh
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 
 # install vim-plug for neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
