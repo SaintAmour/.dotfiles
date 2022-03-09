@@ -8,9 +8,7 @@ GLOBIGNORE=.
 EXCLUDE_FILES=("README.md")
 EXCLUDE_DIRS=(".git" "scripts")
 
-set DOTFILES=$HOME/dotfiles
-
-for item in $DOTFILES/*; do
+for item in $HOME/dotfiles/*; do
     # file
     if [[ -f $item ]]; then
         # get file basename
