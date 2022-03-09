@@ -10,6 +10,10 @@ ln -s "$HOME/dotfiles/.zprofile" "$HOME/.zprofile"
 rm -i "$HOME/.zshrc"
 ln -s "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 
+# Symlink .p10k.zsh
+rm -i "$HOME/.p10k.zsh"
+ln -s "$HOME/dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
+
 # Symlink .nvidia-settings-rc
 rm -i "$HOME/.nvidia-settings-rc"
 ln -s "$HOME/dotfiles/.nvidia-settings-rc" "$HOME/.nvidia-settings-rc"
