@@ -1,72 +1,61 @@
-# Symlink .gitconfig
-rm -i "$HOME/.gitconfig"
-ln -s "$HOME/dotfiles/.gitconfig" "$HOME/.gitconfig"
+#!/bin/bash
 
-# Symlink .zprofile
-rm -i "$HOME/.zprofile"
-ln -s "$HOME/dotfiles/.zprofile" "$HOME/.zprofile"
+# Script to iterate over dotfiles and directories and symlink to $HOME and $HOME/.config respectively
 
-# Symlink .zshrc
-rm -i "$HOME/.zshrc"
-ln -s "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
+# Allows iteration over dotfiles
+GLOBIGNORE=.
 
-# Symlink .p10k.zsh
-rm -i "$HOME/.p10k.zsh"
-ln -s "$HOME/dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
+EXCLUDE_FILES=("README.md")
+EXCLUDE_DIRS=(".git" "scripts")
 
-# Symlink .nvidia-settings-rc
-rm -i "$HOME/.nvidia-settings-rc"
-ln -s "$HOME/dotfiles/.nvidia-settings-rc" "$HOME/.nvidia-settings-rc"
+set DOTFILES=$HOME/dotfiles
 
-# Symlink .tmux.conf
-rm -i "$HOME/.tmux.conf"
-ln -s "$HOME/dotfiles/.tmux.conf" "$HOME/.tmux.conf"
+for item in $DOTFILES/*; do
+    # file
+    if [[ -f $item ]]; then
+        # get file basename
+        file=$(basename ${item})
 
-# Symlink init.vim
-# Check if $HOME/.config/nvim exists
-if [ -d "$HOME/.config/nvim" ]; then
-    rm -drf "$HOME/.config/nvim"
-fi
-ln -s "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
+        # check to exclude file
+        exclude=0
+        for excl in "${EXCLUDE_FILES[@]}"; do
+            if [[ $file == $excl ]]; then
+                exclude=1
+            fi
+        done
 
-# Symlink i3
-# Check if $HOME/.config/i3 exists
-if [ -d "$HOME/.config/i3" ]; then
-    rm -drf "$HOME/.config/i3"
-fi
-ln -s "$HOME/dotfiles/i3" "$HOME/.config/i3"
+        if (( $exclude == 0 )); then
+            # check if file exists in $HOME
+            if [[ -f $HOME/$file ]]; then
+                echo "Removing $HOME/$file"
+                rm -f "$HOME/$file"
+            fi
 
-# Symlink i3status
-# Check if $HOME/.config/i3status exists
-if [ -d "$HOME/.config/i3status" ]; then
-    rm -drf "$HOME/.config/i3status"
-fi
-ln -s "$HOME/dotfiles/i3status" "$HOME/.config/i3status"
+            echo "Symlink $item -> $HOME/$file"
+            ln -s "$item" "$HOME/$file"
+        fi
+    # directory
+    elif [[ -d $item ]]; then
+        # get dir basename
+        dir=$(basename ${item})
 
-# Symlink alacritty
-# Check if $HOME/.config/alacritty exists
-if [ -d "$HOME/.config/alacritty" ]; then
-    rm -drf "$HOME/.config/alacritty"
-fi
-ln -s "$HOME/dotfiles/alacritty" "$HOME/.config/alacritty"
+        # check to exclude dir
+        exclude=0
+        for excl in "${EXCLUDE_DIRS[@]}"; do
+            if [[ $dir == $excl ]]; then
+                exclude=1
+            fi
+        done
 
-# Symlink polybar
-# Check if $HOME/.config/polybar exists
-if [ -d "$HOME/.config/polybar" ]; then
-    rm -drf "$HOME/.config/polybar"
-fi
-ln -s "$HOME/dotfiles/polybar" "$HOME/.config/polybar"
+        if (( $exclude == 0 )); then
+            # check if dir exists in $HOME/.config
+            if [[ -d $HOME/.config/$dir ]]; then
+                echo "Removing $HOME/.config/$dir"
+                rm -rdf "$HOME/.config/$dir"
+            fi
 
-# Symlink picom
-# Check if $HOME/.config/picom exists
-if [ -d "$HOME/.config/picom" ]; then
-    rm -drf "$HOME/.config/picom"
-fi
-ln -s "$HOME/dotfiles/picom" "$HOME/.config/picom"
-
-# Symlink rofi
-# Check if $HOME/.config/rofi exists
-if [ -d "$HOME/.config/rofi" ]; then
-    rm -drf "$HOME/.config/rofi"
-fi
-ln -s "$HOME/dotfiles/rofi" "$HOME/.config/rofi"
+            echo "Symlink $item -> $HOME/.config/$dir"
+            ln -s "$item" "$HOME/.config/$dir"
+        fi
+    fi
+done
