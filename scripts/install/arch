@@ -92,3 +92,5 @@ startx
 ########################################
 # apply flat mouse acceleration profile
 #https://wiki.archlinux.org/title/Mouse_acceleration#Disabling_mouse_acceleration
+
+# configure nvidia-settings to update refresh rate, monitor layout, etc. and save to xorg.conf
