@@ -223,7 +223,6 @@ exec_always --no-startup-id betterlockscreen -u $HOME/.config/i3/background.jpg
 
 # lock after 10 minutes of inactivity
 exec_always --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l blur --time-format "%I:%M"
-'
 
 # start picom
 exec_always --no-startup-id picom -b
