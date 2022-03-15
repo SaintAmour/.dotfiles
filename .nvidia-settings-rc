@@ -1,8 +1,8 @@
 #
-# /home/bstamour/.nvidia-settings-rc
+# /home/bstamour/dotfiles/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA Settings utility
-# Generated on Tue Feb 22 15:55:59 2022
+# Generated on Tue Mar 15 08:30:50 2022
 #
 
 # ConfigProperties:
@@ -13,9 +13,9 @@ SliderTextEntries = Yes
 IncludeDisplayNameInConfigFile = No
 ShowQuitDialog = Yes
 UpdateRulesOnProfileNameChange = Yes
-Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
-Timer = Thermal_Monitor_(GPU_0),Yes,1000
 Timer = Memory_Used_(GPU_0),Yes,3000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 
 # Attributes:
 
@@ -24,10 +24,10 @@ Timer = Memory_Used_(GPU_0),Yes,3000
 0/FSAA=0
 0/TextureClamping=1
 0/FXAA=0
-0/AllowFlipping=1
+0/AllowFlipping=0
 0/FSAAAppControlled=1
 0/LogAnisoAppControlled=1
-0/OpenGLImageSettings=1
+0/OpenGLImageSettings=2
 0/FSAAAppEnhanced=0
 0/ShowGraphicsVisualIndicator=0
 [DPY:DVI-D-0]/Dithering=0
