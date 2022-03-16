@@ -68,6 +68,7 @@ $HOME/dotfiles/scripts/setup
 
 # personal packages
 ########################################
+sudo pacman -S --noconfirm sudo
 sudo pacman -S --noconfirm pulseaudio
 sudo pacman -S --noconfirm discord
 sudo pacman -S --noconfirm firefox
