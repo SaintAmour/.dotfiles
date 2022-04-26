@@ -74,6 +74,7 @@ sudo pacman -S --noconfirm discord
 sudo pacman -S --noconfirm firefox
 sudo pacman -S --noconfirm gimp
 sudo pacman -S --noconfirm btop
+sudo pacman -S --noconfirm libreoffice-still
 yay -S --noconfirm spotify
 
 # udpate any packages
