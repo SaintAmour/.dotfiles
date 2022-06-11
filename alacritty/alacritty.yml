@@ -11,4 +11,4 @@ window:
     y: 5
   dynamic_padding: true
 
-  opacity: 0.7
+  opacity: 1.0
