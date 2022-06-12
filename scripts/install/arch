@@ -62,9 +62,6 @@ yay -S --noconfirm betterlockscreen
 yay -S --noconfirm dbus-python
 yay -S --noconfirm nerd-fonts-source-code-pro
 
-$HOME/dotfiles/scripts/symlink
-$HOME/dotfiles/scripts/setup
-
 
 # personal packages
 ########################################
@@ -75,10 +72,14 @@ sudo pacman -S --noconfirm firefox
 sudo pacman -S --noconfirm gimp
 sudo pacman -S --noconfirm btop
 sudo pacman -S --noconfirm libreoffice-still
+sudo pacman -S --noconfirm cups
 yay -S --noconfirm spotify
 
 # udpate any packages
 yay
+
+$HOME/dotfiles/scripts/symlink
+$HOME/dotfiles/scripts/setup
 
 # start
 ########################################
@@ -88,17 +89,3 @@ nvidia-settings --load-config-only
 ln -s $HOME/dotfiles/.xinitrc $HOME/.xinitrc
 
 startx
-
-
-# steps to do manually
-########################################
-# apply flat mouse acceleration profile
-#https://wiki.archlinux.org/title/Mouse_acceleration#Disabling_mouse_acceleration
-
-# configure nvidia-settings to update refresh rate, monitor layout, etc. and save to xorg.conf
-
-# mount other NTFS file system from Windows to be able to access files and installed Steam games
-#   this is done by adding entries to /etc/fstab after installing the ntfs-3g package
-#       example entry below (note uid and gid instead of defaults to allow all permissions)
-# /dev/sda2 (HD)
-#UUID=<UUID>               /<mount location>     ntfs-3g     uid=1000,gid=1000   0 0

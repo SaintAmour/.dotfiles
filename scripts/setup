@@ -15,3 +15,26 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # install neovim plugins
 nvim -c 'PlugInstall --sync' +qa
+
+# enable gdm
+sudo systemctl enable gdm.service
+
+# enable cups
+sudo systemctl enable cups.service
+sudo systemctl start cups.service
+
+# steps to do manually
+########################################
+# apply flat mouse acceleration profile
+#https://wiki.archlinux.org/title/Mouse_acceleration#Disabling_mouse_acceleration
+
+# configure nvidia-settings to update refresh rate, monitor layout, etc. and save to xorg.conf
+
+# mount other NTFS file system from Windows to be able to access files and installed Steam games
+#   this is done by adding entries to /etc/fstab after installing the ntfs-3g package
+#       example entry below (note uid and gid instead of defaults to allow all permissions)
+# /dev/sda2 (HD)
+#UUID=<UUID>               /<mount location>     ntfs-3g     uid=1000,gid=1000   0 0
+
+# cups
+# add printer
