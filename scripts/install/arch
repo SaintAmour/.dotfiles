@@ -75,11 +75,12 @@ sudo pacman -S --noconfirm libreoffice-still
 sudo pacman -S --noconfirm cups
 yay -S --noconfirm spotify
 
-# udpate any packages
-yay
 
+# setup
+########################################
 $HOME/dotfiles/scripts/symlink
 $HOME/dotfiles/scripts/setup
+
 
 # start
 ########################################
