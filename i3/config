@@ -216,9 +216,9 @@ smart_borders no_gaps
 gaps inner 8
 
 # Set wallpaper with feh
-exec_always --no-startup-id feh --bg-scale $HOME/.config/background.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/background.jpg
 # Set lock screen wallpaper with betterlockscreen
-exec_always --no-startup-id betterlockscreen -u $HOME/.config/background.jpg
+exec_always --no-startup-id betterlockscreen -u $HOME/background.jpg
 
 # lock after 10 minutes of inactivity
 exec_always --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l blur --time-format "%I:%M"'
