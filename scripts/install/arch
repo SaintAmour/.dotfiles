@@ -60,6 +60,7 @@ cd -
 yay -S --noconfirm polybar
 yay -S --noconfirm betterlockscreen
 yay -S --noconfirm dbus-python
+yay -S --noconfirm nerd-fonts-fira-code
 yay -S --noconfirm nerd-fonts-source-code-pro
 
 

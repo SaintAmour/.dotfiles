@@ -1,19 +1,19 @@
 # Font configuration
 font:
   normal:
-    family: SourceCode Pro
+    family: FiraCode Nerd Font Mono
     style: Regular
 
   bold:
-    family: SourceCode Pro
+    family: FiraCode Nerd Font Mono
     style: Bold
 
   italic:
-    family: SourceCode Pro
+    family: FiraCode Nerd Font Mono
     style: Italic
 
   bold_italic:
-      family: SourceCode Pro
+      family: FiraCode Nerd Font Mono
       style: Bold Italic
 
   size: 10
