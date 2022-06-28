@@ -74,6 +74,7 @@ sudo pacman -S --noconfirm gimp
 sudo pacman -S --noconfirm btop
 sudo pacman -S --noconfirm libreoffice-still
 sudo pacman -S --noconfirm cups
+sudo pacman -S --noconfirm nautilus
 yay -S --noconfirm spotify
 
 
