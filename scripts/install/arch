@@ -41,6 +41,7 @@
 # dotfiles related packages
 ########################################
 sudo pacman -S --noconfirm xorg xorg-server xorg-xinit
+sudo pacman -S --noconfirm gnome-shell nautilus gnome-tweak-tool gnome-control-center xdg-user-dirs gdm
 sudo pacman -S --noconfirm i3-gaps rofi feh playerctl xautolock
 sudo pacman -S --noconfirm picom
 sudo pacman -S --noconfirm alacritty
@@ -74,7 +75,6 @@ sudo pacman -S --noconfirm gimp
 sudo pacman -S --noconfirm btop
 sudo pacman -S --noconfirm libreoffice-still
 sudo pacman -S --noconfirm cups
-sudo pacman -S --noconfirm nautilus
 yay -S --noconfirm spotify
 
 
