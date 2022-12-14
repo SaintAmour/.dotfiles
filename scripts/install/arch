@@ -45,7 +45,7 @@ sudo pacman -S --noconfirm gnome-shell nautilus gnome-tweak-tool gnome-control-c
 sudo pacman -S --noconfirm i3-gaps rofi feh playerctl xautolock
 sudo pacman -S --noconfirm picom
 sudo pacman -S --noconfirm alacritty
-sudo pacman -S --noconfirm zsh gnu-free-fonts ttf-firacode-nerd
+sudo pacman -S --noconfirm zsh gnu-free-fonts ttf-firacode-nerd ttf-sourcecodepro-nerd
 sudo pacman -S --noconfirm neovim
 sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm nvidia nvidia-settings
@@ -61,8 +61,6 @@ cd -
 yay -S --noconfirm polybar
 yay -S --noconfirm betterlockscreen
 yay -S --noconfirm dbus-python
-yay -S --noconfirm nerd-fonts-fira-code
-yay -S --noconfirm nerd-fonts-source-code-pro
 
 
 # personal packages
