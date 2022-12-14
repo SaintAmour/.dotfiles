@@ -45,7 +45,7 @@ sudo pacman -S --noconfirm gnome-shell nautilus gnome-tweak-tool gnome-control-c
 sudo pacman -S --noconfirm i3-gaps rofi feh playerctl xautolock
 sudo pacman -S --noconfirm picom
 sudo pacman -S --noconfirm alacritty
-sudo pacman -S --noconfirm zsh gnu-free-fonts
+sudo pacman -S --noconfirm zsh gnu-free-fonts ttf-firacode-nerd
 sudo pacman -S --noconfirm neovim
 sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm nvidia nvidia-settings
