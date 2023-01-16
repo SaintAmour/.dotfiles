@@ -21,8 +21,9 @@ My personal dotfiles.
 - nvidia - NVIDIA display settings
 - git - Personal config
 
-## Setup
+## Fresh Arch Install
 
-1. Install the software above.
-2. Clone the repo into $HOME/dotfiles.
-3. Execute $HOME/dotfiles/symlink.sh.
+1. Install Arch. (If using archisntall, select Minimal profile)
+2. After arch-chroot step, reboot system and log in.
+3. Clone the repo into $HOME/dotfiles.
+4. Execute $HOME/dotfiles/scripts/install/arch.
