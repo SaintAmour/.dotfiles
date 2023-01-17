@@ -26,11 +26,13 @@ sudo chown $(id -u gdm):$(id -g gdm) ~gdm/.config/monitors.xml
 sudo systemctl enable cups.service
 sudo systemctl start cups.service
 
-# steps to do manually
-########################################
 # apply flat mouse acceleration profile
 #https://wiki.archlinux.org/title/Mouse_acceleration#Disabling_mouse_acceleration
+sudo ln -s ./install/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
 
+
+# steps to do manually
+########################################
 # configure nvidia-settings to update refresh rate, monitor layout, etc. and save to xorg.conf
 
 # mount other NTFS file system from Windows to be able to access files and installed Steam games
