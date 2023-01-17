@@ -18,6 +18,9 @@ nvim -c 'PlugInstall --sync' +qa
 
 # enable gdm
 sudo systemctl enable gdm.service
+# this fixes gdm login not on primary monitor
+sudo cp -f ~/.config/monitors.xml ~gdm/.config/monitors.xml
+sudo chown $(id -u gdm):$(id -g gdm) ~gdm/.config/monitors.xml
 
 # enable cups
 sudo systemctl enable cups.service
