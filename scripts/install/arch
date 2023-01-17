@@ -75,6 +75,7 @@ sudo pacman -S --noconfirm libreoffice-still
 sudo pacman -S --noconfirm cups
 sudo pacman -S --noconfirm putty
 sudo pacman -S --noconfirm ntfs-3g
+sudo pacman -S --noconfirm gnome-calculator
 yay -S --noconfirm spotify
 yay -S --noconfirm appimagelauncher
 
