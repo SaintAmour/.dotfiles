@@ -75,6 +75,7 @@ sudo pacman -S --noconfirm libreoffice-still
 sudo pacman -S --noconfirm cups
 sudo pacman -S --noconfirm putty
 yay -S --noconfirm spotify
+yay -S --noconfirm appimagelauncher
 
 
 # setup
