@@ -43,3 +43,6 @@ sudo ln -s ./install/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-ac
 
 # cups
 # add printer
+
+# steam
+# enable multilib repository in /etc/pacman.conf

@@ -77,6 +77,7 @@ sudo pacman -S --noconfirm cups
 sudo pacman -S --noconfirm putty
 sudo pacman -S --noconfirm ntfs-3g
 sudo pacman -S --noconfirm gnome-calculator
+sudo pacman -S --noconfirm steam ttf-liberation wqy-zenhei lib32-systemd
 yay -S --noconfirm spotify
 yay -S --noconfirm appimagelauncher
 
