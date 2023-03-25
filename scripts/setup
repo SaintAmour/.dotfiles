@@ -42,7 +42,7 @@ sudo ln -s ./install/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-ac
 #UUID=<UUID>               /<mount location>     ntfs-3g     uid=1000,gid=1000   0 0
 
 # cups
-# add printer
+# add printer at localhost:631/admin
 
 # steam
 # enable multilib repository in /etc/pacman.conf
